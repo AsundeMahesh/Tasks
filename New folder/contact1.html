@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cooking Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="team.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #fffaf5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
+        header {
+            background: #125159;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            border-radius: 50px;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 25px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe0b2;
+        }
+
+        .social-icons i {
+            margin-left: 20px;
+            font-size: 20px;
+            cursor: pointer;
+            color: rgb(23, 23, 23);
+
+
+        }
+
+
+
+        .hero {
+            height: 80vh;
+            background: url('https://i.pinimg.com/originals/1f/2e/d7/1f2ed796410477e1a734a08a516a7c9e.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        .hero button {
+            padding: 15px 35px;
+            border: none;
+            background: #3a2823;
+            color: white;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #09312f;
+            transform: scale(1.05);
+        }
+
+
+        .contact-card {
+            width: 80%;
+            max-width: 1000px;
+            margin: -300px auto 0;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 10;
+        }
+
+        .contact-left {
+            width: 50%;
+        }
+
+        .contact-left input,
+        .contact-left textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #aaa;
+            margin-bottom: 20px;
+            padding: 10px;
+            outline: none;
+        }
+
+        .contact-left textarea {
+            height: 90px;
+        }
+
+        .foot-img {
+            position: relative;
+            background: url("https://cooking.tessarecipes.com/wp-content/uploads/2025/05/1748333379811-768x584.jpg")center/cover no-repeat;
+            height: 400px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            color: white;
+        }
+
+        .foot-img::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .foot-img {
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-logo {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .footer-text {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .footer-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-icons i {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: white;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .footer-icons i:hover {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo"><i class="fas fa-utensils"></i>
+            Flavor</div>
+
+        <nav>
+            <a href="home1.html">Home</a>
+            <a href="recipe.html">Recipes</a>
+            <a href="About3.html">About</a>
+            <a href="contact1.html">Contact</a>
+            <a href="pastry">Pastry</a>
+        </nav>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Delicious Cooking Ideas</h1>
+            <p>Explore tasty recipes and healthy cooking tips everyday.</p>
+            <button>Explore Recipes</button>
+        </div>
+    </section>
+
+    </div>
+    <section class="image-section">
+        <img src="https://wallpapers.com/images/hd/food-4k-1pf6px6ryqfjtnyr.jpg" width="1520px" height="400px">
+    </section>
+    <section class="contact-card">
+        <div class="contact-left">
+            <input type="text" placeholder="Name*">
+            <input type="email" placeholder="Email*">
+            <textarea placeholder="Message"></textarea><button>Send</button>
+            <div class="contact-right"></div>
+        </div>
+    </section>
+    <footer class="foot-img">
+        <h1 class="footer-logo">Cooking</h1>
+        <p class="footer-text">© Copyright Qode Interactive — All Rights Reserved <br>Proudly Made For You. </p>
+        <div class="footer-icons"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i
+                class="fa-brands fa-instagram"></i></div>
+    </footer>
+
+
+</body>
+
+</html>

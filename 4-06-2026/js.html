@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Operators</h1>
+    <h2>The Assignment (=) Operator</h2>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <input id="age" value="18" />
+
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+
+
+    <script>
+
+        let x = 100;
+        let y = 200;
+        let z = x + y;
+        document.getElementById("demo1").innerHTML = "The sum of x + y is: " + z;
+
+        let a = 5;
+        let b = 2;
+        let c = a + b;
+        document.getElementById("demo2").innerHTML = c;
+        let A = 20;
+        let B = 30;
+        let C = A * B;
+        document.getElementById("demo3").innerHTML = "The product of A * B is: " + C;
+        let d = 50
+        let e = 10 + d;
+        document.getElementById("demo4").innerHTML = e;
+        console.log(10 > 5);
+        console.log(10 === 10);
+        let M = 10;
+        M += 5;
+        document.getElementById("demo5").innerHTML = M;
+
+        let text1 = "A";
+        let text2 = "B";
+        let result = text1 < text2;
+        document.getElementById("demo6").innerHTML = "Is A less than B? " + result;
+
+
+
+        function myFunction() {
+            let voteable;
+            let age = Number(document.getElementById("age").value);
+            if (isNaN(age)) {
+                voteable = "Input is not a number";
+            } else {
+                voteable = (age < 18) ? "Too young" : "Old enough";
+            }
+            document.getElementById("demo7").innerHTML = voteable + " to vote";
+        }
+
+        let p = 10;
+        p++;
+        let n = p;
+        document.getElementById("demo8").innerHTML = n;
+
+        let s = 20;
+        s--;
+        let k = s;
+        document.getElementById("demo9").innerHTML = k;
+
+    </script>

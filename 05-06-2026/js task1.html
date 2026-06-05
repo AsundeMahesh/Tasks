@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Calculator</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            width: 500px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            background: #007bff;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Student Marks Calculator</h1>
+
+        <label>Student Name</label>
+        <input type="text" id="name" placeholder="Enter student name">
+        <br>
+        <br>
+
+        <label>Subject 1 Marks</label>
+        <input type="number" id="sub1" placeholder="Enter Subject 1 marks">
+        <br>
+        <br>
+
+
+        <label>Subject 2 Marks</label>
+        <input type="number" id="sub2" placeholder="Enter Subject 2 marks">
+        <br>
+        <br>
+
+        <label>Subject 3 Marks</label>
+        <input type="number" id="sub3" placeholder="Enter Subject 3 marks">
+        <br>
+        <br>
+
+        <button onclick="calculateMarks()">Result</button>
+
+        <div class="result" id="demo"></div>
+    </div>
+
+    <script>
+        function calculateMarks() {
+
+            let studentName = document.getElementById("name").value;
+            let subject1 = Number(document.getElementById("sub1").value);
+            let subject2 = Number(document.getElementById("sub2").value);
+            let subject3 = Number(document.getElementById("sub3").value);
+            let total = subject1 + subject2 + subject3;
+            let average = total / 3;
+
+
+            let bonusMarks = total;
+            bonusMarks += 5;
+
+
+            let isGreater = subject1 > subject2;
+            let isEqual = subject1 == subject2;
+            let lessthan = subject2 < subject3;
+
+
+            let incrementSub1 = subject1;
+            incrementSub1++;
+
+            let decrementSub2 = subject2;
+            decrementSub2--;
+
+
+            let result = (average >= 35) ? "Pass" : "Fail";
+
+
+            let grade;
+
+            if (average >= 90) {
+                grade = "A Grade";
+            }
+            else if (average >= 75) {
+                grade = "B Grade";
+            }
+            else if (average >= 60) {
+                grade = "C Grade";
+            }
+            else if (average >= 35) {
+                grade = "D Grade";
+            }
+            else {
+                grade = "Fail";
+            }
+
+            document.getElementById("demo").innerHTML = `
+        <h3>Student Result</h3>
+
+        <strong>Name:</strong> ${studentName}<br>
+
+        <h4>Arithmetic Operators</h4>
+        Total Marks (+): ${total}<br>
+        Average Marks (/): ${average.toFixed(2)}<br>
+
+        <h4>Assignment Operator</h4>
+        Total after Bonus Marks (+= 5): ${bonusMarks}<br>
+
+        <h4>Comparison Operators</h4>
+        Subject 1 > Subject 2 : ${isGreater}<br>
+        Subject 1 == Subject 2 : ${isEqual}<br>
+
+
+        <h4>Increment & Decrement Operators</h4>
+        Subject 1 after ++ : ${incrementSub1}<br>
+        Subject 2 after -- : ${decrementSub2}<br>
+
+        <h4>Ternary Operator</h4>
+        Result: ${result}<br>
+
+        <h4>Grade System</h4>
+        Grade: ${grade}
+    `;
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

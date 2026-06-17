@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeless Watches</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #f4f4f4;
+    }
+
+
+
+    header {
+        background: #111;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 50px;
+    }
+
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .search-box {
+        flex: 1;
+        margin: 0 40px;
+    }
+
+    .search-box input {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        margin-left: 25px;
+        font-size: 17px;
+    }
+
+
+
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        display: flex;
+        gap: 40px;
+    }
+
+
+
+    .gallery {
+        flex: 1;
+    }
+
+    .main-image {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .thumbnails {
+        display: flex;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .thumbnails img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+        cursor: pointer;
+        border: 2px solid #ddd;
+    }
+
+    /* Product Card */
+
+    .product-card {
+        width: 420px;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-card h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    .brand {
+        color: #555;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .new-price {
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    .old-price {
+        color: gray;
+        text-decoration: line-through;
+        font-size: 22px;
+    }
+
+    .discount {
+        font-size: 22px;
+        color: #222;
+        font-weight: bold;
+    }
+
+    .description {
+        color: #444;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .rating {
+        color: gold;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .rating span {
+        color: #333;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .quantity {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .quantity button {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background: #111;
+        color: white;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .quantity input {
+        width: 60px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .add-cart {
+        width: 100%;
+        background: #111;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-bottom: 25px;
+    }
+
+    .offer {
+        background: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: 25px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .offer h3 {
+        margin-bottom: 10px;
+    }
+
+    .offer p {
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    .offer button {
+        background: #111;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Patek Philippe</div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <nav>
+            <a href="#">Shop</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">Brands</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+
+    <div class="container">
+
+
+        <div class="gallery">
+            <img src="https://cdn.luxatic.com/wp-content/uploads/2022/05/Patek-Philippe-Stainless-Steel-Ref.-5016A-010.jpg"
+                alt="Watch" class="main-image">
+
+            <div class="thumbnails">
+                <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=200">
+                <img src="https://cdn.luxatic.com/wp-content/uploads/2022/05/Rolex-Daytona-Unicorn-Ref.-6265.jpg">
+                <img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?w=200">
+                <img src="https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=200">
+                <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=200">
+            </div>
+        </div>
+
+
+        <div class="product-card">
+
+            <h1>Patek Philippe Luxury Watch</h1>
+
+            <p class="brand">PRESTIGE TIME CO.</p>
+
+            <div class="price">
+                <span class="new-price">95 lakhs</span>
+                <span class="old-price">1.25 crore</span>
+                <span class="discount">30% OFF</span>
+            </div>
+
+            <p class="description">
+                This luxurious timepiece combines elegance with precision
+                craftsmanship. Perfect for formal occasions or everyday wear,
+                it features premium materials and impeccable design.
+            </p>
+
+            <div class="rating">
+                ★★★★★
+                <span>Rated 4.8/5 (256 reviews)</span>
+            </div>
+
+            <div class="quantity">
+                <button>-</button>
+                <input type="text" value="1">
+                <button>+</button>
+            </div>
+
+            <button class="add-cart">Add to Bag</button>
+
+            <div class="offer">
+                <h3>Limited-Time Offer!</h3>
+                <p>
+                    Get an additional 10% off your first purchase when
+                    you sign up for our newsletter.
+                </p>
+                <button>Sign Up Now</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
